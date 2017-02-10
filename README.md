@@ -9,9 +9,7 @@
 1. Run the tests: `python manage.py test`
 
 ## Import Movie Data
-Import the movie data from the tsv.
-
-* Run the import: `python manage.py import data/movies_genres.tsv`
+Import the movie data from the tsv: `python manage.py import data/movies_genres.tsv`
 
 ## Test out the API
 Please start the dev. server (`python manage.py runserver_plus`) before running any of the following commands.
