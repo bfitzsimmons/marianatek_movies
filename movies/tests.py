@@ -198,6 +198,14 @@ class MovieViewSetSpecialTests(APITestCase):
             response = self.client.post('/api/movies/', item, format='json')
             self.movie_data.append(response.data)
 
+    def test_movies_by_genre(self):
+        response = self.client.get('/api/movies/?genre=comedy')
+        results = response.data['results']
+        self.assertEqual(response.data['count'], 3)
+        self.assertEqual(results[0]['name'], 'A Brew Hope')
+        self.assertEqual(results[1]['name'], 'A Brew Hope II')
+        self.assertEqual(results[2]['name'], 'A Brew Hope III')
+
     def test_sequel_count(self):
         response = self.client.get('/api/movies/?sequels=True')
         results = response.data['results']
