@@ -28,7 +28,7 @@ Please start the dev. server (`python manage.py runserver`) before running any o
 
 ### Movies
 * Get a list of movies: http://localhost:8000/api/movies/
-* Add a new movie: `curl -X POST -H "Content-Type: application/json" -H "Cache-Control: no-cache" -d '{"name": "Big Hero 6",	"year": "2014-01-01",	"genres": ["http://localhost:8000/api/genres/4/"]}' "http://localhost:8000/api/movies/"`
+* Add a new movie: `curl -X POST -H "Content-Type: application/json" -H "Cache-Control: no-cache" -d '{"name": "Big Her0 6",	"year": "2014-01-01",	"genres": ["http://localhost:8000/api/genres/4/"]}' "http://localhost:8000/api/movies/"`
 * Get the newly added movie: http://localhost:8000/api/movies/7149/
 * Modify the newly added movie: `curl -X PUT -H "Content-Type: application/json" -H "Cache-Control: no-cache" -d '{"name": "Big Hero 6", "year": "2014-01-01",	"genres": ["http://localhost:8000/api/genres/4/"]}' "http://localhost:8000/api/movies/7149/"`
 * Delete the newly added movie: `curl -X DELETE -H "Cache-Control: no-cache" "http://localhost:8000/api/movies/7149/"`
