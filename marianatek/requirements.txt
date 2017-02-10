@@ -1,0 +1,7 @@
+django
+django-extensions
+django-filter
+djangorestframework
+ipython
+requests
+Werkzeug
