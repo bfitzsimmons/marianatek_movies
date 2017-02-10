@@ -1,4 +1,4 @@
-# MarianaTek Movies
+# Mariana Tek Movies
 
 ## Setup
 1. Check out the code: `git clone git@github.com:bfitzsimmons/marianatek_movies.git
